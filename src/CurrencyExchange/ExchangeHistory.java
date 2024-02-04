@@ -31,8 +31,12 @@ public class ExchangeHistory {
       for (Exchange exchange : exchangeHistory) {
         System.out.println("История обменов: ");
         System.out.println("Дата и время: " + exchange.getDateTime());
-        System.out.println("Сумма: " + exchange.getAmount() + " " + exchange.getFromCurrency() +
-            " обменяли в: " + exchange.getToCurrency());
+        System.out.printf("Сумма: %.2f %s обменяли в: %.2f %s%n",
+            exchange.getAmount(), exchange.getFromCurrency(),
+            UserInterface.exchangeCurrency(exchange.getAmount(),
+                exchange.getFromCurrency(), exchange.getToCurrency()),
+            exchange.getToCurrency());
+
         System.out.println();
       }
     }

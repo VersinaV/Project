@@ -7,6 +7,7 @@ public class Exchange {
   private double amount;
   private String fromCurrency;
   private String toCurrency;
+  private String resultAmount;
   private final Date dateTime;
 
   // Используем конструктор с параметрами для правильной инициализации полей
@@ -14,6 +15,7 @@ public class Exchange {
     this.amount = amount;
     this.fromCurrency = fromCurrency;
     this.toCurrency = toCurrency;
+    this.resultAmount = resultAmount;
     this.dateTime = new Date();
   }
 
@@ -35,6 +37,14 @@ public class Exchange {
 
   public String getToCurrency() {
     return toCurrency;
+  }
+
+  public String getResultAmount() {
+    return resultAmount;
+  }
+
+  public void setResultAmount(String resultAmount) {
+    this.resultAmount = resultAmount;
   }
 
   public void setToCurrency(String toCurrency) {

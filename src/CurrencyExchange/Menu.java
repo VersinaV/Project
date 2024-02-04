@@ -46,7 +46,6 @@ public class Menu  {
         switch (choice) {
           case 1:
             exchangeCurrencyOption();
-           // exchangeHistory.viewHistory();
             break;
           case 2:
             exchangeHistory.viewHistory();
