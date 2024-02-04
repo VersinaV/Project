@@ -19,8 +19,9 @@ public class UserInterface {
     exchangeRates.put("USD", 1.0);
     exchangeRates.put("EUR", 0.85);
     exchangeRates.put("GBP", 0.74);
-    exchangeRates.put("LEI", 18.24);
+    exchangeRates.put("MDL", 18.24);
     exchangeRates.put("RON", 5.74);
+    exchangeRates.put("UAH", 40.64);
   }
 
   public static double exchangeCurrency(double amount, String fromCurrency, String toCurrency) {
