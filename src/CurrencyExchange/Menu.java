@@ -3,7 +3,8 @@ package CurrencyExchange;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Menu  {
+public class Menu {
+
   private static final ExchangeHistory exchangeHistory = new ExchangeHistory();
 
   private static void exchangeCurrencyOption() {
@@ -29,6 +30,7 @@ public class Menu  {
   }
 
   public static void main(String[] args) {
+
     while (true) {
       try {
         Scanner scanner = new Scanner(System.in);
